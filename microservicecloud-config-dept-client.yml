@@ -6,6 +6,12 @@ spring:
 server:
   port: 8001
 
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.atguigu.springcloud.entities
+  mapper-locations:
+    - classpath:mybatis/mapper/**/*.xml
+
 spring:
   profiles: dev
   application:
@@ -22,11 +28,7 @@ spring:
         max-total: 5
         max-wait-millis: 200
 
-mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
-  mapper-locations:
-    - classpath:mybatis/mapper/**/*.xml
+
 
 eureka:
   client:
@@ -48,6 +50,12 @@ info:
 server:
   port: 8001
 
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.atguigu.springcloud.entities
+  mapper-locations:
+    - classpath:mybatis/mapper/**/*.xml
+
 spring:
   profiles: test
   application:
@@ -64,11 +72,7 @@ spring:
         max-total: 5
         max-wait-millis: 200
 
-mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
-  mapper-locations:
-    - classpath:mybatis/mapper/**/*.xml
+
 
 eureka:
   client:
