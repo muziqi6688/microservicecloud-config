@@ -1,12 +1,10 @@
 spring:
   profiles:
     active:
-      - dev
+    - dev
 ---
 server:
   port: 8001
-
-
 
 spring:
   profiles: dev
@@ -31,7 +29,7 @@ mybatis:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka
   instance:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true
@@ -74,7 +72,7 @@ mybatis:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka
   instance:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true
